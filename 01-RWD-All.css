@@ -1,0 +1,547 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 367px;
+    height: 100vh;
+    background-color: rgb(255, 225, 255);
+    float: left;
+    padding-top: 75px;
+}
+
+main{
+    width: calc(100% - 367px);
+    height: 100vh;
+    background-color: rgb(201, 255, 255);
+    float: right;
+
+    position: relative;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.links{
+    width: 150px;
+    /* height: 150px; */
+    /* background-color: grey; */
+    margin: auto;
+}
+
+a{
+    display: block;
+    /* background: white; */
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+    color: rgb(255, 150, 229);
+
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(201, 255, 255);
+}
+
+a:active{
+    background-color: white;
+}
+
+
+.container{
+    width: 955px;
+    height: 570px;
+    /* background: rgb(228, 228, 228); */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container > div{
+    width: 315px;
+    height: 570px;
+    background-color: antiquewhite;
+    float: left;
+    border-radius: 20px;
+
+    background-repeat: no-repeat;
+
+    transition: 0.5s;
+
+    
+}
+
+
+.x{
+    background-image: url('imgs/slashio-photography-XxWxPGXwDU0-unsplash.jpg');
+    background-size: 200%;
+    background-position: 48% 85%;
+
+    /* animation: wave 3s linear 0s infinite normal; */
+
+   
+}
+
+.x:hover{
+    background-size: 230%;
+    animation-play-state: paused;
+}
+
+.y{
+    margin:0px 5px;
+
+    background-image: url('imgs/heather-barnes-WbZesfqwR-A-unsplash.jpg');
+    background-size: 180%;
+    background-position: 53% 100%;
+
+    /* animation: wave 3s linear -1s infinite normal; */
+}
+
+.y:hover{
+    background-size: 230%;
+    background-position: 53% 80%;
+
+    animation-play-state: paused;
+}
+
+.z{
+    background-image: url('imgs/kobby-mendez-WXJ33HOrzvE-unsplash.jpg');
+    background-size: 148%;
+    background-position: 53% 50%;
+
+    /* animation: wave 3s linear -1.2s infinite normal; */
+}
+
+.z:hover{
+    background-size: 200%;
+    animation-play-state: paused;
+}
+
+
+
+/* ------ Small PC ------*/
+@media (max-width: 1440px) {
+    main{
+        width: calc(100% - 367px);
+        height: 100vh;
+        background-color: rgb(201, 255, 255);
+        float: right;
+    
+        position: relative;
+    }
+    
+    
+    .container{
+        width: 800px;
+        height: 560px;
+    
+        /* background: rgb(200, 44, 44); */
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        background-repeat: no-repeat;
+    
+    }
+    
+    .x, .y, .z{
+        transition: 1s;
+        border-radius: 20px;
+    }
+    
+    
+    .container .x{
+        width: 800px;
+        height: 275px;
+        margin-bottom: 10px;
+    
+        background-image: url('imgs/heather-barnes-WbZesfqwR-A-unsplash.jpg');
+        background-size: 200%;
+        background-position: 40% 44%;
+    
+    }
+    
+    .container .x:hover{
+        background-size: 250%;
+        animation-play-state: paused;
+    }
+    
+    
+    .container .y, .container .z{
+        width: 395px;
+        height: 275px;
+        background: rgb(159, 139, 255);
+
+        margin: 0px;
+    
+        float: left;
+    
+    }
+    
+    .container .y{
+        margin-right: 10px;
+    
+        background-image: url('imgs/slashio-photography-XxWxPGXwDU0-unsplash.jpg');
+        background-size: 250%;
+        background-position: 55% 43%;
+    }
+    
+    .container .y:hover{
+        background-size: 350%;
+        animation-play-state: paused;
+    }
+    
+    .container .z{
+        background-image: url('imgs/kobby-mendez-WXJ33HOrzvE-unsplash.jpg');
+        background-size: 140%;
+        background-position: 25% 20%;
+    
+    }
+    
+    .container .z:hover{
+        background-size: 200%;
+        animation-play-state: paused;
+    }
+}
+
+
+
+
+/* ------ Tablet ------*/
+@media (max-width: 1200px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    
+    nav{
+        width: 100%;
+        height: 100px;
+        background: rgb(255, 225, 255);
+        padding: 10px 35px;
+    
+        position: relative;
+    }
+    
+    .logo{
+        width: 80px;
+        height: 80px;
+        background: grey;
+        float: left;
+    }
+    
+    .links{
+        height: 80px;
+        float: right;
+        /* background: rgb(229, 181, 181); */
+        padding: 25px 0px;
+
+        width: unset;
+    }
+    
+    .links > a{
+        display: inline-block;
+        /* background: white; */
+        margin: auto;
+        text-align: center;
+        color: rgb(255, 150, 229);
+    
+        text-decoration: none;
+    }
+    
+    a:hover{
+        background-color: rgb(201, 255, 255);
+    }
+    
+    a:active{
+        background-color: white;
+    }
+    
+    a:nth-child(2){
+        margin: 0px 40px;
+    }
+    
+    main{
+        width: 100%;
+        min-height: 100vh;
+        background: rgb(201, 255, 255);
+    
+        padding: 50px 35px;
+    
+        position: relative;
+    }
+    
+    .container{
+        width: 100%;
+        /* background: rgb(255, 111, 111); */
+        height: 800px; /*這個container的高一定要給，因為下方的y,z用了float離開排版系統，會導致爆版。若不給的話，main的高也撐不開，導致背景色會讓人誤會沒有垂直填滿喔！
+        不信的話，可以把這行height省略試試看。*/
+
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    
+        background-repeat: no-repeat;
+    
+    }
+    
+    .x, .y, .z{
+        border-radius: 20px;
+    }
+    
+    .container .x{
+        width: 100%;
+        height: 400px;
+        /* background: rgb(255, 194, 194); */
+        margin-bottom: 10px;
+    
+    }
+    
+    .container .x{
+        background-image: url(imgs/heather-barnes-WbZesfqwR-A-unsplash.jpg);
+        background-size: 100%;
+        background-position: 50% 60%;
+    
+        transition: 1s;
+    
+        /* animation: wave 3s linear 0s infinite normal; */
+    }
+    
+    .container .x:hover{
+        background-size: 150%;
+        animation-play-state: paused;
+    }
+    
+    
+    .container .y, .container .z{
+        width: calc(50% - 5px);
+        height: 390px;
+        background: rgb(159, 139, 255);
+    
+        float: left;
+        
+        transition: 1s;
+    }
+    
+    .container .y{
+       margin-right: 10px;
+    
+       background-image: url('imgs/slashio-photography-XxWxPGXwDU0-unsplash.jpg');
+       background-size: 180%;
+       background-position: 50% 40%;
+    }
+    
+    .container .y:hover{
+        background-size: 300%;
+        animation-play-state: paused;
+    }
+    
+    .container .z{
+        background-image: url('imgs/kobby-mendez-WXJ33HOrzvE-unsplash.jpg');
+        background-size: 100%;
+        background-position: 50% 40%; 
+    
+    }
+    
+    .container .z:hover{
+        background-size: 150%;
+        animation-play-state: paused;
+    }
+}
+
+
+
+/* ------ Phone ------*/
+@media (max-width: 550px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    nav{
+        width: 100%;
+        background: rgb(255, 225, 255);
+        height: 80px;
+        padding: 15px 20px;
+        position: relative;
+
+        float: unset;
+    }
+    
+    .menu{
+        width: 40px;
+        height: 50px;
+        background: rgb(170, 245, 255);
+        float: left;
+    
+        cursor: pointer;
+    }
+    
+    
+    /* 連結按鈕們 */
+    .links{
+        clear: both;
+        background-color: white;
+
+        float: unset;
+        padding: 0px;
+        width: unset;
+        margin: unset;
+    
+        transition: 0.5s;
+        display: none;
+    
+    }
+    
+    /* 翻譯：選擇input:checked 之後，所有class為links的元素 */
+    input:checked ~ .links{
+        max-height: 500px;
+        display: block;
+        position: relative;
+        z-index: 1; /*為了讓連結們可以顯示在父層之上，需要用index。注意：index需要搭配position才可運作喔！*/
+        
+
+    }
+    
+    
+    .links a{
+        display: block;
+        margin: auto;
+        text-align: left;
+        margin-bottom: 5px;
+        color: rgb(255, 150, 229);
+        margin-left: 10px;
+    
+        text-decoration: none;
+        
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    
+    .links a a:hover{
+        background-color: rgb(201, 255, 255);
+    }
+    
+    .links a a:active{
+        background-color: white;
+    }
+    
+    
+    .logo{
+        width: 55px;
+        height: 55px;
+        background: grey;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        float: unset;
+
+        margin: 0px;
+    }
+    
+    main{
+        width: 100%;
+        min-height: calc(100vh - 80px);
+        /* 因為x, y, z的內容只有一點點，只要視窗拉大，main若沒有設定height，後面的空間就都會是白色的。但，為了讓底色繼續顯示，勢必要設定height（且為設定最小高度），即“整個視窗高度100vh-導航列nav的高度80px。” */
+        background-color: rgb(201, 255, 255);
+        float: unset;
+        padding: 0px;
+    }
+    
+    .container{
+        width: unset;
+        height: auto;
+        margin: 0px;
+        float: unset;
+    }
+
+    .container .x, .container .y, .container .z{
+        width: 100%;
+        height: 100pt;
+        background-color: grey;
+        
+        margin: unset;
+    
+        background-repeat: no-repeat;
+    
+        transition: 1s;
+    }
+    
+    .container .x{
+        /* background-color: antiquewhite; */
+        background-image: url('imgs/heather-barnes-WbZesfqwR-A-unsplash.jpg');
+        background-size: 100%;
+        background-position: 50% 42%;
+    }
+    
+    .container .x:hover{
+        background-size: 150%;
+        animation-play-state: paused;
+    }
+    
+    .container .y{
+        background-color: aqua;
+        background-image: url('imgs/slashio-photography-XxWxPGXwDU0-unsplash.jpg');
+        background-size: 150%;
+        background-position: 50% 43%;
+    }
+    
+    .container .y:hover{
+        background-size: 200%;
+        animation-play-state: paused;
+    }
+    
+    .container .z{
+        background-color: aquamarine;
+        background-image: url(imgs/kobby-mendez-WXJ33HOrzvE-unsplash.jpg);
+        background-size: 100%;
+        background-position: 50% 25%;
+    }
+    
+    .container .z:hover{
+        background-size: 150%;
+        animation-play-state: paused;
+    }
+     
+}
+
+
+@keyframes wave{
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
